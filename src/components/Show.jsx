@@ -30,10 +30,12 @@ const Show = ({ displayDay, displayMonth, displayYear }) => {
                                   isEdit: false
                                  }
                             ]
-        setList(updatedList)
-        localStorage.setItem(`key`, JSON.stringify(updatedList));
 
-        setValue('')
+        if (value.length > 0) {
+           setList(updatedList)
+            localStorage.setItem(`key`, JSON.stringify(updatedList));
+            setValue('') 
+        }
     }
 
     // Функция переключения completed
