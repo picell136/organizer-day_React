@@ -1,0 +1,121 @@
+body {
+    background-image: linear-gradient(-30deg, rgb(47, 40, 230), rgb(66, 201, 138));
+    height: 100vh;
+    width: 100vh;
+    font-family: Trebuchet MS, Helvetica, sans-serif;
+    font-size: 1.3rem;
+}
+
+h1 {
+    color:rgb(41, 41, 41);
+}
+
+.main-container {
+    display: flex;
+    height: 100vh;
+    width: 100vw;  
+    justify-content: center;
+}
+
+.container { 
+    display: flex;
+    flex-direction: column;
+    margin-top: 10%;
+    width: 40%;
+    text-align: center;
+    /* justify-content: center; */
+}
+
+.navigation {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 5%;
+}
+
+.icon-arrow:hover {
+    opacity: 0.5;
+}
+
+.date {
+    margin-top: 10px;
+    font-weight: 700;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+/**/
+
+.content {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+input {
+    border-radius: 4px;
+    opacity: 0.7;
+    box-shadow: none;
+    font-size: medium;
+    margin: 5px;
+    width: 160px;
+    height: 20px;
+}
+
+button {
+    border: 3px solid rgb(158, 96, 2);
+    border-radius: 10px;
+    background-color: burlywood;
+    font-family: Trebuchet MS, Helvetica, sans-serif;
+    font-size: large;
+    margin: 1px;
+    padding: 5px;
+    box-shadow: 0px 0px 6px 3px rgba(30, 20, 6, 0.3);
+}
+
+button:hover {
+    background-color: rgb(161, 134, 98);
+}
+
+.title {
+    margin: 3px;
+}
+
+.task {
+    margin-right: 5px;
+    width: 190px;
+    word-wrap: break-word;
+    text-align: left;
+}
+
+.inputValue {
+    position: absolute;
+    margin-right: 300px;
+}
+
+.buttons-isEdit {
+    position: absolute;
+    margin-left: 180px;
+}
+
+.buttons-notEdit {
+    right: 0;
+}
+
+.icon-done { 
+    fill: rgb(17, 134, 2);
+    padding: 0; 
+}
+
+.icon-done:hover { 
+    fill: rgb(45, 241, 19);
+}
+
+.note {
+    display: flex;
+    justify-content: space-around;
+}
+
+li {
+    margin: 15px 15px 0px 0px;
+}
