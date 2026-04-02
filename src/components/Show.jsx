@@ -121,9 +121,7 @@ const Show = ({ displayDay, displayMonth, displayYear }) => {
                                                     <div className={elem.isEdit ? 'buttons-isEdit' : 'buttons-notEdit'}>
                                                         <span className='done' >
                                                             <button type='submit' onClick={() => toggleCompleted(elem.creationTime)}>
-                                                                <svg className={["icon-done"]} viewBox="0 0 42 42" width="14" height="14">
-                                                                    <use href="../_allSprites.svg#icon-done2.svg" x="0" y="0"></use>
-                                                                </svg>
+                                                                <div className='icon-done2'>✓</div>
                                                             </button>
                                                         </span>
                                                         <span>
