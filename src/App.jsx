@@ -28,6 +28,7 @@ export default function App() {
   return (
 		<Routes router={router}>
 			<Route path="/" element={<HomePage />} />
+			<Route path="/show" element={<Show />} />
 			<Route path="*" element={<NotFound404 />} />
 		</Routes>
   )
