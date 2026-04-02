@@ -10,7 +10,7 @@ import App from './App.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <BrowserRouter>
+    <BrowserRouter basename="/organizer-day_React">
       <App />
     </BrowserRouter>
   </StrictMode>
