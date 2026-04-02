@@ -65,12 +65,12 @@ const HomePage = () => {
                     <h1>Заметки</h1>
                     <div className='navigation'>
                         <span className={["icon-arrow"]} onClick={prevDay}>
-                            <img src="../../public/arrow-circle-left.svg" alt="Arrow circle icon" width="50" height="50"/>
+                            <img src="arrow-circle-left.svg" alt="Arrow circle icon" width="50" height="50"/>
                         </span>
                         <div className='date'> {displayDay} {convertMonths(displayMonth)} {displayYear} года </div>
                         {/* <button onClick={nextDay}>→</button> */}
                         <span className={["icon-arrow"]} onClick={nextDay}>
-                            <img src="../../public/arrow-circle-right.svg" alt="Arrow circle icon" width="50" height="50"/>
+                            <img src="arrow-circle-right.svg" alt="Arrow circle icon" width="50" height="50"/>
                         </span>
                     </div>
                     <Show displayDay={displayDay} displayMonth={displayMonth} displayYear={displayYear}/>
