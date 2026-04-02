@@ -107,13 +107,17 @@ button:hover {
     padding: 0; 
 }
 
-.icon-done2 { 
+.icon-done:hover { 
+    fill: rgb(45, 241, 19);
+}
+
+.done-button { 
     color: #239906; 
     font-weight: 900;
 }
 
-.icon-done:hover { 
-    fill: rgb(45, 241, 19);
+.delete-button {
+    color: rgb(148, 2, 2);
 }
 
 .note {

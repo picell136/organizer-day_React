@@ -121,7 +121,7 @@ const Show = ({ displayDay, displayMonth, displayYear }) => {
                                                     <div className={elem.isEdit ? 'buttons-isEdit' : 'buttons-notEdit'}>
                                                         <span className='done' >
                                                             <button type='submit' onClick={() => toggleCompleted(elem.creationTime)}>
-                                                                <div className='icon-done2'>✓</div>
+                                                                <div className='done-button'>✓</div>
                                                             </button>
                                                         </span>
                                                         <span>
@@ -133,7 +133,8 @@ const Show = ({ displayDay, displayMonth, displayYear }) => {
                                                             </button>
                                                         </span>
                                                         <span>
-                                                            <button 
+                                                            <button
+                                                                className='delete-button' 
                                                                 type='submit' 
                                                                 onClick={() => deleteNote(elem.creationTime)}
                                                             >
