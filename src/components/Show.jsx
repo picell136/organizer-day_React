@@ -27,8 +27,7 @@ const Show = ({ displayDay, displayMonth, displayYear }) => {
                                   creationTime: date.getTime(), 
                                   date: noteDate, 
                                   completed: false, 
-                                  isEdit: false,
-                                  valueInInput: ''
+                                  isEdit: false
                                  }
                             ]
         setList(updatedList)
@@ -62,7 +61,7 @@ const Show = ({ displayDay, displayMonth, displayYear }) => {
 
                 input.value = note.value // в инпут попадает значение текста
 
-                return { ...note, isEdit: !note.isEdit, valueInInput: note.value };  
+                return { ...note, isEdit: !note.isEdit };  
             }   
             return note;
         });
