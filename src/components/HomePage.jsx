@@ -3,6 +3,9 @@ import { useState } from 'react';
 
 import Show from './Show'
 
+import rightArrow from '../images/arrow-circle-right.svg'
+import leftArrow from '../images/arrow-circle-left.svg'
+
 const HomePage = () => {
     let date  = new Date();
     let year  = date.getFullYear();
@@ -65,12 +68,12 @@ const HomePage = () => {
                     <h1>Заметки</h1>
                     <div className='navigation'>
                         <span className={["icon-arrow"]} onClick={prevDay}>
-                            <img src="arrow-circle-left.svg" alt="Arrow circle icon" width="50" height="50"/>
+                            <img src={leftArrow} alt="Arrow circle icon" width="50" height="50"/>
                         </span>
                         <div className='date'> {displayDay} {convertMonths(displayMonth)} {displayYear} года </div>
                         {/* <button onClick={nextDay}>→</button> */}
                         <span className={["icon-arrow"]} onClick={nextDay}>
-                            <img src="arrow-circle-right.svg" alt="Arrow circle icon" width="50" height="50"/>
+                            <img src={rightArrow} alt="Arrow circle icon" width="50" height="50"/>
                         </span>
                     </div>
                     <Show displayDay={displayDay} displayMonth={displayMonth} displayYear={displayYear}/>
