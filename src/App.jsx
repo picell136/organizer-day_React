@@ -1,5 +1,6 @@
 import React from 'react';
-import { Routes, Route } from 'react-router'
+// import { Routes, Route } from 'react-router'
+import { Routes, Route, HashRouter } from 'react-router-dom'
 
 import { createBrowserRouter } from 'react-router-dom'
 
@@ -24,10 +25,11 @@ const router = createBrowserRouter([
 export default function App() {
 
   return (
-    <Routes router={router}>
-      <Route path="/" element={<HomePage />} />
-      {/* <Route path="/show" element={<Show />} /> */}
-      <Route path="*" element={<NotFound404 />} />
-    </Routes>
+	<HashRouter>
+		<Routes router={router}>
+			<Route path="/" element={<HomePage />} />
+			<Route path="*" element={<NotFound404 />} />
+		</Routes>
+	</HashRouter>
   )
 }
