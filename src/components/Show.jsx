@@ -122,7 +122,7 @@ const Show = ({ displayDay, displayMonth, displayYear }) => {
                                                         <span className='done' >
                                                             <button type='submit' onClick={() => toggleCompleted(elem.creationTime)}>
                                                                 <svg className={["icon-done"]} viewBox="0 0 42 42" width="14" height="14">
-                                                                    <use href="_allSprites.svg#icon-done2.svg" x="0" y="0"></use>
+                                                                    <use href="../_allSprites.svg#icon-done2.svg" x="0" y="0"></use>
                                                                 </svg>
                                                             </button>
                                                         </span>
